@@ -1,15 +1,18 @@
+import React from 'react';
 import './App.css';
-// Components
-import goalList from './components/goalList.js';
+import GoalList from './components/GoalList';
 
 
-function App() {
+const App = () => {
+  const courseGoals = [
+    {id: 'g1', text: 'Finish The Damn Dishes'},
+    {id: 'g2', text: 'Finish the damn course'},
+  ]
   return (
     <div>
-      <goalList />
+      <GoalList goals={courseGoals}/>
     </div>
-  
-  );
+  )
 }
 
 export default App;
