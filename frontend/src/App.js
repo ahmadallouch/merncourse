@@ -1,18 +1,13 @@
-import React from 'react';
 import './App.css';
-import GoalList from './components/GoalList';
 
-
-const App = () => {
-  const courseGoals = [
-    {id: 'g1', text: 'Finish The Damn Dishes'},
-    {id: 'g2', text: 'Finish the damn course'},
-  ]
+function App() {
   return (
-    <div>
-      <GoalList goals={courseGoals}/>
+    <div className="App">
+      <header className="App-header">
+        <h1 title="There's gotta be a system that does this automatically">Just testing</h1>
+      </header>
     </div>
-  )
+  );
 }
 
 export default App;
